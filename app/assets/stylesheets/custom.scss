@@ -103,6 +103,16 @@ footer {
   }
 }
 
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
 /* sidebar */
 
 aside {
@@ -140,12 +150,15 @@ aside {
   margin-top: 15px;
 }
 
-/* miscellaneous */
+/* forms */
 
-.debug_dump {
-  clear: both;
-  float: left;
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
   width: 100%;
-  margin-top: 45px;
+  margin-bottom: 15px;
   @include box_sizing;
+}
+
+input {
+  height: auto !important;
 }
